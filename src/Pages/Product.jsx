@@ -40,10 +40,10 @@ const Product = () => {
                 />
               </div>
               <div className="w-full h-1/2 md:w-1/2 md:h-full flex flex-col px-2">
-                <div className="w-full h-1/6 text-xl text-sky-600 font-Bebas object-contain border md:text-3xl">
+                <div className="w-full h-1/6 text-xl text-sky-600 font-Bebas object-contain md:text-3xl">
                   {product.title}
                 </div>
-                <div className="w-full h-1/6 text-lg text-black flex items-center font-Bebas">
+                <div className="w-full h-1/6 text-lg text-gray-500 flex items-center font-Bebas">
                   Catogories: {product.category}
                 </div>
                 <div className="w-full h-2/6 border-y border-sky-600 py-2 text-lg overflow-y-auto font-Bebas text-gray-500">

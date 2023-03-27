@@ -33,7 +33,7 @@ const Home = () => {
             <Link
               to={`/product/${product.id}`}
               key={product.id}
-              className="w-full border shadow-md hover:shadow-lg transition ease-in-out"
+              className="w-full border shadow-md hover:shadow-lg transition ease-in-out md:hover:scale-90 md:hover:-translate-y-4 duration-500"
             >
               <img src={product.image} alt="" className="w-full h-[25vh] object-contain" />
               <div className="w-full h-[8vh] flex px-2 text-sky-600 text-sm font-Bebas">
