@@ -36,14 +36,14 @@ const Home = () => {
               className="w-full border shadow-md hover:shadow-lg transition ease-in-out"
             >
               <img src={product.image} alt="" className="w-full h-[25vh]" />
-              <div className="w-full h-[8vh] flex px-2 text-sky-600 text-sm">
+              <div className="w-full h-[8vh] flex px-2 text-sky-600 text-sm font-Bebas">
                 {product.title.slice(0, 55)}
               </div>
               <div className="w-full h-[5vh] items-center flex   px-2 text-gray-500 text-lg font-Bebas justify-end">
                 ${product.price}
               </div>
               <div className="w-full h-[8vh] max-sm:h-[7vh] flex p-2 text-sm">
-                <button className="w-full bg-sky-600 hover:bg-white text-white hover:text-sky-600 rounded-sm shadow-md transition ease-in-out">
+                <button className="w-full bg-sky-600 hover:bg-white text-white hover:text-sky-600 rounded-sm shadow-md transition ease-in-out font-Bebas">
                   Add to cart
                 </button>
               </div>

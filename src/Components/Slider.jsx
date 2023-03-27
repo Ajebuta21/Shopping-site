@@ -32,9 +32,9 @@ const Slider = () => {
                 <img
                   src={slide.image}
                   alt=""
-                  className="w-full h-4/6 border object-contain"
+                  className="w-full h-4/6 object-contain"
                 />
-                <p className="block w-full h-1/6 text-sm text-sky-600">
+                <p className="block w-full h-1/6 text-sm text-sky-600 font-Bebas">
                   {slide.title.slice(0, 45)}
                 </p>
                 <p className="flex justify-end items-center w-full text-xl font-Bebas text-gray-500">
