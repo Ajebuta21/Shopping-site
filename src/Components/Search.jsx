@@ -9,7 +9,7 @@ const Search = () => {
           type="search"
           name=""
           id=""
-          className="flex w-10/12 h-full rounded-tl-3xl rounded-bl-3xl outline-none pl-3 text-xs text-sky-500 border-l border-t border-b focus:border-sky-600"
+          className="flex w-10/12 h-full rounded-tl-3xl rounded-bl-3xl rounded-tr-none rounded-br-none outline-none pl-3 text-xs text-sky-500 border-l border-t border-b focus:border-sky-600"
           placeholder="Search here..."
         />
         <button className="bg-sky-600 text-white w-2/12 h-full rounded-tr-3xl rounded-br-3xl flex justify-center items-center border border-sky-600">

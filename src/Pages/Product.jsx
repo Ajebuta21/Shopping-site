@@ -40,7 +40,7 @@ const Product = () => {
                 />
               </div>
               <div className="w-full h-1/2 md:w-1/2 md:h-full flex flex-col px-2">
-                <div className="w-full h-1/6 text-xl text-sky-600 font-Bebas object-contain">
+                <div className="w-full h-1/6 text-xl text-sky-600 font-Bebas object-contain border md:text-3xl">
                   {product.title}
                 </div>
                 <div className="w-full h-1/6 text-lg text-black flex items-center font-Bebas">
@@ -51,7 +51,7 @@ const Product = () => {
                   {product.description}
                 </div>
                 <div className="w-full h-1/6 flex justify-between items-center">
-                  <div className="h-5/6 w-40 flex">
+                  <div className="h-5/6 md:h-2/6 w-40 flex">
                     <button className="w-1/3 h-full bg-sky-600 text-white hover:bg-white hover:text-sky-600 shadow-md rounded-sm transition-colors ease-in-out">
                       -
                     </button>
@@ -67,7 +67,7 @@ const Product = () => {
                   </span>
                 </div>
                 <div className="w-full h-1/6">
-                  <button className="bg-sky-600 text-white shadow-md hover:bg-white hover:text-sky-600 w-full h-5/6 rounded-sm font-Bebas transition-colors ease-in-out">
+                  <button className="bg-sky-600 text-white shadow-md hover:bg-white hover:text-sky-600 w-full h-5/6 md:h-3/6 rounded-sm font-Bebas transition-colors ease-in-out">
                     Add to cart
                   </button>
                 </div>
