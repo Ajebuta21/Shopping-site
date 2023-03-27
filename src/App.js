@@ -5,6 +5,7 @@ import Layouttwo from './Components/Layouttwo';
 import Home from './Pages/Home';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login'
+import Product from './Pages/Product';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/' element={<Layouttwo><Home/></Layouttwo> } />
         <Route path='/signup' element={<Layout><Signup/></Layout> } />
         <Route path='/login' element={<Layout><Login/></Layout> } />
+        <Route path='/product/:id' element={<Layout><Product/></Layout> } />
       </Routes></>
   )
 }

@@ -49,9 +49,9 @@ const Navbar = () => {
           Ace
         </Link>
         <ul className="flex gap-4 font-Bebas text-xl text-sky-600 max-lg:hidden">
-          <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
+          <Link to='/' className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
             Home
-          </li>
+          </Link>
           <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
             Categories
           </li>
@@ -64,9 +64,9 @@ const Navbar = () => {
           <li className="lg:hidden max-lg:py-1 max-lg:w-full max-lg:flex max-lg:pl-4 text-xs text-gray-500">
             Menu
           </li>
-          <li className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out">
+          <Link to='/' className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out">
             Home
-          </li>
+          </Link>
           <li className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out">
             Categories
           </li>
@@ -74,7 +74,7 @@ const Navbar = () => {
         <div className="flex items-center h-3/4">
           <button
             onClick={() => setCartpage(!cartpage)}
-            className="flex gap-1 items-center rounded-md w-[10vh] justify-center bg-sky-700 h-4/5 relative mr-2 font-Bebas hover:opacity-50 transition ease-in-out"
+            className="flex gap-1 items-center rounded-md w-[10vh] justify-center bg-sky-600 h-4/5 relative mr-2 font-Bebas hover:opacity-50 transition ease-in-out"
           >
             <span className="text-white text-xl">Cart</span>
             <BsCart2 className="text-white text-sm" />

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   BsChevronCompactLeft,
   BsChevronCompactRight,
-  BsDashLg,
 } from "react-icons/bs";
 
 const Slider = () => {
@@ -29,7 +28,7 @@ const Slider = () => {
         {slides.map(function (slide) {
           return (
             <>
-              <div className="min-w-full h-full p-2 rounded-md">
+              <div key={slide.id} className="min-w-full h-full p-2 rounded-md">
                 <img
                   src={slide.image}
                   alt=""

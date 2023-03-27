@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Loader from "../Components/Loader";
 import Slider from "../Components/Slider";
 
@@ -28,9 +29,12 @@ const Home = () => {
       <h2 className="px-4 text-lg text-sky-600 font-medium font-Bebas py-4">All Products:</h2>
       <div className="w-full max-sm:px-2 px-4 py-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
         {products.map(function (product) {
-          {console.log(product)}
           return (
-            <div className="w-full border shadow-md hover:shadow-lg rounded-md transition ease-in-out">
+            <Link
+              to={`/product/${product.id}`}
+              key={product.id}
+              className="w-full border shadow-md hover:shadow-lg transition ease-in-out"
+            >
               <img src={product.image} alt="" className="w-full h-[25vh]" />
               <div className="w-full h-[8vh] flex px-2 text-sky-600 text-sm">
                 {product.title.slice(0, 55)}
@@ -43,7 +47,7 @@ const Home = () => {
                   Add to cart
                 </button>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
