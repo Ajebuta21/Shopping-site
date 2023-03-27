@@ -20,6 +20,7 @@ const Product = () => {
   };
   useEffect(() => {
     getProducts();
+    // eslint-disable-next-line
   }, []);
   if (loading) {
     return <Loader />;
