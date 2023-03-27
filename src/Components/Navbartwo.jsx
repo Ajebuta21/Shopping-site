@@ -50,7 +50,10 @@ const Navbartwo = () => {
           Ace
         </Link>
         <ul className="flex gap-4 font-Bebas text-xl text-sky-600 max-lg:hidden">
-          <Link to='/' className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
+          <Link
+            to="/"
+            className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1"
+          >
             Home
           </Link>
           <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
@@ -65,10 +68,17 @@ const Navbartwo = () => {
           <li className="lg:hidden max-lg:py-1 max-lg:w-full max-lg:flex max-lg:pl-4 text-xs text-gray-500">
             Menu
           </li>
-          <Link to='/' className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out">
+          <Link
+            onClick={() => setIsOpen((isOpen) => !isOpen)}
+            to="/"
+            className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
+          >
             Home
           </Link>
-          <li className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out">
+          <li
+            onClick={() => setIsOpen((isOpen) => !isOpen)}
+            className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
+          >
             Categories
           </li>
         </motion.ul>
@@ -101,12 +111,14 @@ const Navbartwo = () => {
             className="absolute border-b border-l shadow-md w-[16vh] top-[14vh] right-2 z-40 bg-white"
           >
             <Link
+              onClick={() => setOpenAccount((openAccount) => !openAccount)}
               to="/signup"
               className="flex justify-center py-2 border-b text-sky-600 font-Bebas text-lg"
             >
               Sign up
             </Link>
             <Link
+              onClick={() => setOpenAccount((openAccount) => !openAccount)}
               to="/login"
               className="flex justify-center py-2 border-b text-sky-600 font-Bebas text-lg"
             >

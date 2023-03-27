@@ -35,7 +35,7 @@ const Home = () => {
               key={product.id}
               className="w-full border shadow-md hover:shadow-lg transition ease-in-out"
             >
-              <img src={product.image} alt="" className="w-full h-[25vh]" />
+              <img src={product.image} alt="" className="w-full h-[25vh] object-contain" />
               <div className="w-full h-[8vh] flex px-2 text-sky-600 text-sm font-Bebas">
                 {product.title.slice(0, 55)}
               </div>
