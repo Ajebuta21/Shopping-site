@@ -31,6 +31,16 @@ const Navbar = () => {
   return (
     <nav className="border-sky-600 w-full h-[8vh] fixed bg-white z-30">
       <div className="w-full h-full px-2 flex justify-between items-center relative">
+        <button
+          onClick={() => setIsOpen((isOpen) => !isOpen)}
+          className="flex items-center text-sky-600 w-[8vh] justify-center h-full lg:hidden hover:opacity-50 cursor-pointer transition ease-in-out"
+        >
+          {isOpen ? (
+            <IoCloseSharp className="text-3xl" />
+          ) : (
+            <GiHamburgerMenu className="text-3xl" />
+          )}
+        </button>
         <Link
           to="/"
           className="text-2xl flex justify-center font-bold font-lobster text-sky-600"
@@ -83,16 +93,7 @@ const Navbar = () => {
               <AiFillCaretDown className="text-xl" />
             )}
           </button>
-          <button
-            onClick={() => setIsOpen((isOpen) => !isOpen)}
-            className="flex items-center text-sky-600 w-[8vh] justify-center h-full lg:hidden hover:opacity-50 cursor-pointer transition ease-in-out"
-          >
-            {isOpen ? (
-              <IoCloseSharp className="text-3xl" />
-            ) : (
-              <GiHamburgerMenu className="text-3xl" />
-            )}
-          </button>
+
           <motion.ul
             animate={openAccount ? "open" : "closed"}
             variants={vary}
