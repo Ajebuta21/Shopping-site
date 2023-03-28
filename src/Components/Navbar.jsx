@@ -56,7 +56,19 @@ const Navbar = () => {
             Home
           </Link>
           <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
-            Categories
+            electronics
+          </li>
+          <Link
+            to="/jewelry"
+            className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1"
+          >
+            jewelery
+          </Link>
+          <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
+            men's clothing
+          </li>
+          <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
+            women's clothing
           </li>
         </ul>
         <motion.ul
@@ -74,11 +86,33 @@ const Navbar = () => {
           >
             Home
           </Link>
+          <li className="lg:hidden max-lg:py-1 max-lg:w-full max-lg:flex max-lg:pl-4 text-xs text-gray-500">
+            Categories
+          </li>
           <li
             onClick={() => setIsOpen((isOpen) => !isOpen)}
             className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
           >
-            Categories
+            electronics
+          </li>
+          <Link
+            to="/jewelry"
+            onClick={() => setIsOpen((isOpen) => !isOpen)}
+            className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
+          >
+            jewelery
+          </Link>
+          <li
+            onClick={() => setIsOpen((isOpen) => !isOpen)}
+            className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
+          >
+            men's clothing
+          </li>
+          <li
+            onClick={() => setIsOpen((isOpen) => !isOpen)}
+            className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
+          >
+            women's clothing
           </li>
         </motion.ul>
         <div className="flex items-center h-3/4">
