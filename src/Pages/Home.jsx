@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiFillCaretRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
 import Loader from "../Components/Loader";
 import Slider from "../Components/Slider";
 
@@ -8,7 +9,7 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products`)
+    fetch(`https://fakestoreapi.com/products?limit=9`)
       .then((res) => res.json())
       .then((data) => {
         if (data) {
@@ -24,7 +25,7 @@ const Home = () => {
     return <Loader />;
   }
   return (
-    <div className="w-full min-h-screen py-[14vh] flex flex-col bg-gray-50">
+    <div className="w-full min-h-screen pt-[14vh] flex flex-col bg-gray-50">
       <h1 className="text-3xl my-3 text-sky-600 font-Bebas block mx-auto">
         Looking for jewelry?
       </h1>
@@ -39,7 +40,7 @@ const Home = () => {
         </Link>
       </div>
       <h2 className="px-4 text-lg text-sky-600 font-medium font-Bebas py-4">
-        All Products:
+        Lastest Products:
       </h2>
       <div className="w-full max-sm:px-2 px-4 py-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
         {products.map(function (product) {
@@ -69,6 +70,7 @@ const Home = () => {
           );
         })}
       </div>
+      <Footer/>
     </div>
   );
 };
