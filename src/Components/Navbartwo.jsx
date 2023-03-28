@@ -56,21 +56,30 @@ const Navbartwo = () => {
           >
             Home
           </Link>
-          <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
+          <Link
+            to="/electronics"
+            className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1"
+          >
             electronics
-          </li>
+          </Link>
           <Link
             to="/jewelry"
             className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1"
           >
             jewelery
           </Link>
-          <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
+          <Link
+            to="/men's-clothing"
+            className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1"
+          >
             men's clothing
-          </li>
-          <li className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1">
+          </Link>
+          <Link
+            to="/women's-clothing"
+            className="hover:opacity-50 cursor-pointer transition ease-in-out hover:-translate-y-1"
+          >
             women's clothing
-          </li>
+          </Link>
         </ul>
         <motion.ul
           animate={isOpen ? "open" : "closed"}
@@ -90,12 +99,13 @@ const Navbartwo = () => {
           <li className="lg:hidden max-lg:py-1 max-lg:w-full max-lg:flex max-lg:pl-4 text-xs text-gray-500">
             Categories
           </li>
-          <li
+          <Link
+            to="/electronics"
             onClick={() => setIsOpen((isOpen) => !isOpen)}
             className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
           >
             electronics
-          </li>
+          </Link>
           <Link
             to="/jewelry"
             onClick={() => setIsOpen((isOpen) => !isOpen)}
@@ -103,18 +113,20 @@ const Navbartwo = () => {
           >
             jewelery
           </Link>
-          <li
+          <Link
+            to="/men's-clothing"
             onClick={() => setIsOpen((isOpen) => !isOpen)}
             className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
           >
             men's clothing
-          </li>
-          <li
+          </Link>
+          <Link
+            to="/women's-clothing"
             onClick={() => setIsOpen((isOpen) => !isOpen)}
             className="max-lg:border-b max-lg:py-2 max-lg:w-full max-lg:flex max-lg:pl-4 hover:bg-sky-500 hover:text-white transition ease-out"
           >
             women's clothing
-          </li>
+          </Link>
         </motion.ul>
         <div className="flex items-center h-3/4">
           <button

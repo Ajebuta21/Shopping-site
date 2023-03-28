@@ -12,7 +12,7 @@ const Jewelry = () => {
         if (data) {
           setTimeout(() => {
             setLoading(false);
-          }, 2000);
+          }, 1000);
           setProducts(data);
           console.log(data);
         }
@@ -22,7 +22,7 @@ const Jewelry = () => {
     return <Loader />;
   }
     return (
-      <div className="w-full min-h-screen pt-[8vh]">
+      <div className="w-full min-h-screen pt-[8vh] bg-gray-50">
         <h2 className="px-4 text-lg text-sky-600 font-medium font-Bebas py-4">
           jeweleries:
         </h2>
