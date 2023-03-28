@@ -6,7 +6,7 @@ const Jewelry = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch(`hhttps://fakestoreapi.com/products/category/jewelery`)
+    fetch(`https://fakestoreapi.com/products/category/jewelery`)
       .then((res) => res.json())
       .then((data) => {
         if (data) {
