@@ -19,7 +19,7 @@ const Slider = () => {
   };
   return (
     <>
-      <div className="w-1/2 mx-auto h-[40vh] relative overflow-hidden shadow-md border-l border-b z-0 bg-white">
+      <div className="w-1/2 mx-auto h-[40vh] relative overflow-hidden shadow-md border-l border-b z-0 bg-white dark:bg-slate-900">
         <div
           className="flex w-full h-full items-center transition-transform ease-out duration-500"
           style={{ transform: `translateX(-${curr * 100}%)` }}
@@ -40,7 +40,6 @@ const Slider = () => {
                     {slide.title.slice(0, 45)}
                   </p>
                   <div className="flex items-center w-full text-xl justify-between">
-                    
                     <p className=" font-Bebas text-gray-500">${slide.price}</p>
                   </div>
                 </div>

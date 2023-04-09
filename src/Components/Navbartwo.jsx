@@ -30,7 +30,7 @@ const Navbartwo = () => {
     );
   }
   return (
-    <nav className="border-sky-600 w-full h-[8vh] fixed bg-white z-30">
+    <nav className="border-sky-600 w-full h-[8vh] fixed bg-white dark:bg-slate-900 z-30">
       <div className="w-full h-full px-2 flex justify-between items-center relative">
         <button
           onClick={() => setIsOpen((isOpen) => !isOpen)}
@@ -84,7 +84,7 @@ const Navbartwo = () => {
         <motion.ul
           animate={isOpen ? "open" : "closed"}
           variants={variants}
-          className="flex lg:gap-4 lg:hidden max-lg:absolute max-lg:top-[14vh] max-lg:flex-col max-lg:h-[86vh] max-lg:w-2/5 max-lg:shadow-md max-lg:left-0 font-Bebas text-sky-600 text-xl z-40 bg-white"
+          className="flex lg:gap-4 lg:hidden max-lg:absolute max-lg:top-[14vh] max-lg:flex-col max-lg:h-[86vh] max-lg:w-2/5 max-lg:shadow-md max-lg:left-0 font-Bebas text-sky-600 text-xl z-40 bg-white dark:bg-slate-900"
         >
           <li className="lg:hidden max-lg:py-1 max-lg:w-full max-lg:flex max-lg:pl-4 text-xs text-gray-500">
             Menu
@@ -154,7 +154,7 @@ const Navbartwo = () => {
           <motion.ul
             animate={openAccount ? "open" : "closed"}
             variants={vary}
-            className="absolute border-b border-l shadow-md w-[16vh] top-[14vh] right-2 z-40 bg-white"
+            className="absolute border-b border-l shadow-md w-[16vh] top-[14vh] right-2 z-40 bg-white dark:bg-slate-900"
           >
             <Link
               onClick={() => setOpenAccount((openAccount) => !openAccount)}
