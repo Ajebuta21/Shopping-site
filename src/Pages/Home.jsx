@@ -25,7 +25,7 @@ const Home = () => {
     return <Loader />;
   }
   return (
-    <div className="w-full min-h-screen pt-[14vh] flex flex-col bg-gray-50">
+    <div className="w-full min-h-screen pt-[14vh] flex flex-col bg-white dark:bg-slate-900">
       <h1 className="text-3xl my-3 text-sky-600 font-Bebas block mx-auto">
         Looking for jewelry?
       </h1>
@@ -48,7 +48,7 @@ const Home = () => {
             <Link
               to={`/product/${product.id}`}
               key={product.id}
-              className="w-full border shadow-md hover:shadow-lg transition ease-in-out md:hover:scale-90 md:hover:-translate-y-4 duration-500 bg-white"
+              className="w-full shadow-md hover:shadow-lg transition ease-in-out md:hover:scale-90 md:hover:-translate-y-4 duration-500 bg-white"
             >
               <img
                 src={product.image}

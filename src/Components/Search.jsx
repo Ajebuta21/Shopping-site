@@ -4,17 +4,13 @@ import {AiOutlineSearch} from 'react-icons/ai'
 const Search = () => {
   return (
     <div className="fixed w-full h-[6vh] flex top-[8vh] justify-center items-center z-20 bg-white shadow-sm">
-      <div className="w-2/5 max-lg:w-4/5 h-4/5 flex items-center transition ease-in-out">
+      <div className="w-2/3 h-5/6 rounded-3xl relative group">
         <input
           type="search"
-          name=""
-          id=""
-          className="flex w-10/12 h-full  outline-none pl-3 text-xs text-sky-500 border-l border-t border-b focus:border-sky-600"
+          className="w-full h-full border py-2 pl-6 pr-2 text-sky-600 text-sm rounded-3xl outline-none hover:border-sky-600 transition duration-500 ease-in-out"
           placeholder="Search here..."
         />
-        <button className="bg-sky-600 text-white w-2/12 h-full  flex justify-center items-center border border-sky-600 lg:hover:opacity-50 transition-colors ease-in-out">
-          <AiOutlineSearch />
-        </button>
+        <AiOutlineSearch className="text-gray-400 text-sm absolute top-1/3 left-2 group-hover:text-blue-600 transition duration-500 ease-in-out" />
       </div>
     </div>
   );
